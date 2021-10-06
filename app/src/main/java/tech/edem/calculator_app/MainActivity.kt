@@ -113,9 +113,16 @@ class MainActivity : AppCompatActivity() {
         mathOperation.append(str)
     }
 
+    override fun onRestoreInstanceState(savedInstanceState: Bundle) {
+        super.onRestoreInstanceState(savedInstanceState)
+        mathOperation.text = savedInstanceState.getString("MATH_KEY")
+        result.text = savedInstanceState.getString("KEY")
+    }
+
     override fun onStart() {
         super.onStart()
     }
+
 
     override fun onResume() {
         super.onResume()
@@ -127,6 +134,15 @@ class MainActivity : AppCompatActivity() {
 
     override fun onStop() {
         super.onStop()
+    }
+
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+
+        outState.run {
+            putString("MATH_KEY", mathOperation.text.toString())
+            putString("KEY", result.text.toString())
+        }
     }
 
     override fun onDestroy() {
