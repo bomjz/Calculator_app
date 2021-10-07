@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -9,26 +10,26 @@
     <TextView
         android:id="@+id/math_operation"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="40dp"
         android:layout_gravity="end"
         android:gravity="end|bottom"
         android:textColor="@color/grey"
-        android:textSize="45sp"
+        android:textSize="30sp"
         android:textStyle="bold"
         tools:text="@string/key_0" />
 
     <TextView
         android:id="@+id/result"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="40dp"
         android:layout_gravity="end"
         android:gravity="end|bottom"
         android:textColor="@color/white"
-        android:textSize="45sp"
+        android:textSize="30sp"
         android:textStyle="bold"
         tools:text="@string/key_0" />
 
-    <GridLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    <GridLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -51,16 +52,14 @@
             android:layout_height="wrap_content"
             android:text="@string/key_C"
             android:textColor="@color/orange"
-            android:textSize="@dimen/button_text"
             app:backgroundTint="@color/black" />
 
         <Button
             android:id="@+id/correct"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="@dimen/button_text"
             app:backgroundTint="@color/black"
-            app:icon="@drawable/ic_cancel"
+            app:icon="@drawable/ic_cancel_24"
             app:iconTint="@color/orange"
             tools:ignore="ButtonStyle" />
 
@@ -70,7 +69,6 @@
             android:layout_height="wrap_content"
             android:text="@string/key_remainder"
             android:textColor="@color/orange"
-            android:textSize="@dimen/button_text"
             app:backgroundTint="@color/black" />
 
         <Button
@@ -79,7 +77,6 @@
             android:layout_height="wrap_content"
             android:text="@string/key_division"
             android:textColor="@color/orange"
-            android:textSize="@dimen/button_text"
             app:backgroundTint="@color/black" />
 
         <Button
@@ -87,7 +84,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/key_1"
-            android:textSize="@dimen/button_text"
             app:backgroundTint="@color/black" />
 
         <Button
@@ -95,7 +91,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/key_2"
-            android:textSize="@dimen/button_text"
             app:backgroundTint="@color/black" />
 
         <Button
@@ -103,7 +98,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/key_3"
-            android:textSize="@dimen/button_text"
             app:backgroundTint="@color/black" />
 
         <Button
@@ -112,7 +106,6 @@
             android:layout_height="wrap_content"
             android:text="@string/key_multiplication"
             android:textColor="@color/orange"
-            android:textSize="@dimen/button_text"
             app:backgroundTint="@color/black" />
 
         <Button
@@ -120,7 +113,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/key_4"
-            android:textSize="@dimen/button_text"
             app:backgroundTint="@color/black" />
 
         <Button
@@ -128,7 +120,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/key_5"
-            android:textSize="@dimen/button_text"
             app:backgroundTint="@color/black" />
 
         <Button
@@ -136,16 +127,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/key_6"
-            android:textSize="@dimen/button_text"
             app:backgroundTint="@color/black" />
 
         <Button
             android:id="@+id/subtraction"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="@dimen/button_text"
             app:backgroundTint="@color/black"
-            app:icon="@drawable/ic_minus"
+            app:icon="@drawable/ic_minus_24"
             app:iconTint="@color/orange" />
 
         <Button
@@ -153,7 +142,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/key_7"
-            android:textSize="@dimen/button_text"
             app:backgroundTint="@color/black" />
 
         <Button
@@ -161,7 +149,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/key_8"
-            android:textSize="@dimen/button_text"
             app:backgroundTint="@color/black" />
 
         <Button
@@ -169,16 +156,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/key_9"
-            android:textSize="@dimen/button_text"
             app:backgroundTint="@color/black" />
 
         <Button
             android:id="@+id/plus"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="@dimen/button_text"
             app:backgroundTint="@color/black"
-            app:icon="@drawable/ic_plus"
+            app:icon="@drawable/ic_plus_24"
             app:iconTint="@color/orange" />
 
         <Button
@@ -190,7 +175,6 @@
             android:layout_columnSpan="2"
             android:layout_gravity="fill"
             android:text="@string/key_0"
-            android:textSize="@dimen/button_text"
             app:backgroundTint="@color/black" />
 
         <Button
@@ -198,16 +182,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/key_point"
-            android:textSize="@dimen/button_text"
             app:backgroundTint="@color/black" />
 
         <Button
             android:id="@+id/equals"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="@dimen/button_text"
             app:backgroundTint="@color/orange"
-            app:icon="@drawable/ic_equals"
+            app:icon="@drawable/ic_equals_24"
             app:iconTint="@color/white" />
     </GridLayout>
 </LinearLayout>
