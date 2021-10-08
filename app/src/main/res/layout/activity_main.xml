@@ -1,18 +1,172 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:columnCount="4">
 
-    <TextView
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/delete"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="@string/key_C"
+        android:textColor="@color/orange"
+        android:textSize="@dimen/button_text"
+        app:backgroundTint="@color/black" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/correct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/key_correct"
+        android:textColor="@color/orange"
+        android:textSize="@dimen/button_text"
+        app:backgroundTint="@color/black" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/remainder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/key_remainder"
+        android:textColor="@color/orange"
+        android:textSize="@dimen/button_text"
+        app:backgroundTint="@color/black" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/division"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/key_division"
+        android:textColor="@color/orange"
+        android:textSize="@dimen/button_text"
+        app:backgroundTint="@color/black" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/key_1"
+        android:textSize="@dimen/button_text"
+        app:backgroundTint="@color/black" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/key_2"
+        android:textSize="@dimen/button_text"
+        app:backgroundTint="@color/black" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/key_3"
+        android:textSize="@dimen/button_text"
+        app:backgroundTint="@color/black" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/multi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/key_multiplication"
+        android:textColor="@color/orange"
+        android:textSize="@dimen/button_text"
+        app:backgroundTint="@color/black" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/four"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/key_4"
+        android:textSize="@dimen/button_text"
+        app:backgroundTint="@color/black" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/five"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/key_5"
+        android:textSize="@dimen/button_text"
+        app:backgroundTint="@color/black" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/six"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/key_6"
+        android:textSize="@dimen/button_text"
+        app:backgroundTint="@color/black" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/subtraction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/key_minus"
+        android:textColor="@color/orange"
+        android:textSize="@dimen/button_text"
+        app:backgroundTint="@color/black" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/seven"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/key_7"
+        android:textSize="@dimen/button_text"
+        app:backgroundTint="@color/black" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/eight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/key_8"
+        android:textSize="@dimen/button_text"
+        app:backgroundTint="@color/black" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/nine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/key_9"
+        android:textSize="@dimen/button_text"
+        app:backgroundTint="@color/black" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/plus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/key_plus"
+        android:textColor="@color/orange"
+        android:textSize="@dimen/button_text"
+        app:backgroundTint="@color/black" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/zero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="7"
+        android:layout_column="0"
+        android:layout_columnSpan="2"
+        android:layout_gravity="fill"
+        android:text="@string/key_0"
+        android:textSize="@dimen/button_text"
+        app:backgroundTint="@color/black" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/key_point"
+        android:textSize="@dimen/button_text"
+        app:backgroundTint="@color/black" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/equals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/key_equals"
+        android:textColor="@color/white"
+        android:textSize="@dimen/button_text"
+        app:backgroundTint="@color/orange" />
+</GridLayout>
